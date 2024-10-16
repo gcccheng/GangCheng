@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -33,6 +33,30 @@
             width: 100%;
             height: 315px;
         }
+        /* Two-column layout */
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar {
+            flex: 0 0 200px;
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .sidebar h3 {
+            font-size: 1.1em;
+            color: #e74c3c;
+            text-transform: uppercase;
+        }
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -41,101 +65,92 @@
         <p>Red Hat Certified Architect, Senior Infrastructure Engineer</p>
     </header>
 
-    <div class="section">
-        <img src="/api/placeholder/200/200" alt="Gang Cheng" class="profile-image">
+    <div class="container">
+        <div class="sidebar">
+            <h3>Employment</h3>
+            <div class="date">2022–Now</div>
+
+            <h3>Education</h3>
+            <div class="date">2010-2012</div>
+
+            <h3>Certifications</h3>
+            <ul>
+                <li>Red Hat Certified Architect</li>
+                <li>Red Hat Certified Specialist in Containers</li>
+                <li>Red Hat Certified OpenShift Administrator</li>
+                <!-- Add more certifications as needed -->
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Summary</h2>
+                <p>Gang Cheng believes that the mindset of continuous learning and the ability to quickly adapt to new technologies are core competencies for a professional IT engineer. Throughout his career, he has proactively equipped himself with the latest skills and knowledge through an ever-growing list of certifications, workshops, and courses. His efforts and expertise were recognized when he received the honor of being named the Red Hat Certified Professional of the Year 2024.</p>
+            </div>
+
+            <div class="section">
+                <h2>Red Hat Certified Professional of the Year 2024</h2>
+                <iframe src="https://www.youtube.com/embed/x38txm4oNp8?start=32" title="Red Hat Certified Professional of the Year 2024"></iframe>
+                <p>This video highlights the achievement and recognition Gang Cheng received as Red Hat Certified Professional of the Year 2024, showcasing his contribution to the IT community.</p>
+            </div>
+
+            <div class="section">
+                <h2>Employment</h2>
+                <h3>Senior Infrastructure Engineer at Sopra Steria</h3>
+                <p>During past years, Gang has led/contributed to a variety of projects for clients, including:</p>
+                
+                <h4>Infrastructure Standardization and Automation</h4>
+                <p><strong>Description:</strong> The current infrastructure management was manual, inconsistent, and lacked standardization, leading to inefficiencies and errors across different environments.</p>
+                <p><strong>Contribution:</strong> Standardized operating systems, automated VM provisioning and management.</p>
+                <p><strong>Value Created:</strong> Improved infrastructure consistency, reduced manual errors, enhanced security, and significantly sped up deployment times through automation.</p>
+
+                <h4>Deploying Kubernetes and GitHub ARC</h4>
+                <p><strong>Description:</strong> The current use of GitHub runners on VMs caused conflicts and scalability issues due to a lack of isolation and standardized infrastructure management. A container orchestration platform was needed to run, scale, and manage GitHub action workflows.</p>
+                <p><strong>Contribution:</strong> Built Kubernetes cluster, set up GitHub ARC, and redesigned workflows to transition to containerized environments.</p>
+                <p><strong>Value Created:</strong> Improved isolation, scalability, and reliability, while reducing manual overhead through automated infrastructure management.</p>
+
+                <!-- Add more projects as needed -->
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li>Master in Network and System Administration, University of Oslo (2010-2012)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Red Hat Certified Architect</li>
+                    <li>Red Hat Certified Specialist in Containers</li>
+                    <li>Red Hat Certified OpenShift Administrator</li>
+                    <li>Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform</li>
+                    <li>Red Hat Certified Specialist in Deployment and Systems Management</li>
+                    <li>Red Hat Certified Engineer</li>
+                    <li>Red Hat 8 Certified System Administrator</li>
+                    <li>Microsoft Certified: Azure Fundamentals</li>
+                    <li>Red Hat Certified Specialist in Containers and Kubernetes</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Hobbies</h2>
+                <p>Blog writing, Skiing, and hiking</p>
+            </div>
+
+            <div class="section">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English: Full Professional Working Proficiency</li>
+                    <li>Norwegian: Professional Working Proficiency</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Summary</h2>
-        <p>Gang Cheng believes that the mindset of continuous learning and the ability to quickly adapt to new technologies are core competencies for a professional IT engineer. Throughout his career, he has proactively equipped himself with the latest skills and knowledge through an ever-growing list of certifications, workshops, and courses. His efforts and expertise were recognized when he received the honor of being named the Red Hat Certified Professional of the Year 2024.</p>
-        <p>With over a decade of working experience in various IT infrastructure environments, Gang has brought solutions and created values for stakeholders through different projects. Gang believes automation is key to managing infrastructure as automation can significantly improve efficiency, reduce manual errors, ensure reliability, and enhance security.</p>
-        <p>In addition to his expertise in Red Hat, Gang has expanded his skills to include a wide range of DevOps, Cloud, and Site Reliability technologies. He has gained valuable experience in monitoring, logging, scripting, version control, and CI/CD through both professional work and self-learning projects.</p>
-    </div>
-
-    <div class="section">
-        <h2>Red Hat Certified Professional of the Year 2024</h2>
-        <iframe src="https://www.youtube.com/watch?v=Vh7cI3331rU" title="Introducing the 2024 Red Hat Certified Professional of the Year"></iframe>
-        <p>This video highlights the achievement and recognition Gang Cheng received as Red Hat Certified Professional of the Year 2024, showcasing his contribution to the IT community.</p>
-    </div>
-
-    <div class="section">
-        <h2>Employment</h2>
-        <h3>Senior Infrastructure Engineer at Sopra Steria (2022-Now)</h3>
-        <p>During past years, Gang has led/contributed to a variety of projects for clients, including:</p>
-
-        <h4>Infrastructure Standardization and Automation</h4>
-        <p><strong>Description:</strong> The current infrastructure management was manual, inconsistent, and lacked standardization, leading to inefficiencies and errors across different environments.</p>
-        <p><strong>Contribution:</strong> Standardized operating systems, automated VM provisioning and management.</p>
-        <p><strong>Value Created:</strong> Improved infrastructure consistency, reduced manual errors, enhanced security, and significantly sped up deployment times through automation.</p>
-
-        <h4>Deploying Kubernetes and GitHub ARC</h4>
-        <p><strong>Description:</strong> The current use of GitHub runners on VMs caused conflicts and scalability issues due to a lack of isolation and standardized infrastructure management. A container orchestration platform was needed to run, scale, and manage GitHub action workflows.</p>
-        <p><strong>Contribution:</strong> Built Kubernetes cluster, set up GitHub ARC, and redesigned workflows to transition to containerized environments.</p>
-        <p><strong>Value Created:</strong> Improved isolation, scalability, and reliability, while reducing manual overhead through automated infrastructure management.</p>
-
-        <h4>Automating Upgrading RHEL7 to RHEL8</h4>
-        <p><strong>Description:</strong> RHEL7 was approaching the end of support, so upgrading hundreds of RHEL7 systems became a high priority.</p>
-        <p><strong>Contribution:</strong> Designed the upgrading plan with application owners and automated the upgrade process using Ansible.</p>
-        <p><strong>Value Created:</strong> Ensured systems were aligned with security compliance standards and future-proofed the infrastructure.</p>
-
-        <h4>Ansible Automation Platform on OpenShift</h4>
-        <p><strong>Description:</strong> The increasing number of playbooks, inventories, and workflows became difficult to manage manually. A central platform was needed to orchestrate and manage all Ansible-related elements.</p>
-        <p><strong>Contribution:</strong> Collaborated with teams to set up the OpenShift platform and deployed the Ansible Automation Platform on it.</p>
-        <p><strong>Value Created:</strong> Reduced manual tasks and errors, improved operational efficiency, and enhanced security by centralizing management of playbooks, inventories, and secrets.</p>
-
-        <h4>Deploying Red Hat 9 to Production Infrastructure</h4>
-        <p><strong>Description:</strong> Needed to test and prepare RHEL9 for production use.</p>
-        <p><strong>Contribution:</strong> Deployed Red Hat 9 using Ansible, created a customized Red Hat image template for VMware, and integrated the system with Windows AD.</p>
-        <p><strong>Value Created:</strong> Enabled seamless deployment, ensured system compatibility, and prepared the OS for production environments.</p>
-
-        <h4>Automating Patching of Red Hat VM</h4>
-        <p><strong>Description:</strong> The manual patching process for a large-scale Red Hat environment was time-consuming and prone to errors, necessitating an automated solution.</p>
-        <p><strong>Contribution:</strong> Designed and implemented an Ansible-based workflow with Red Hat Satellite to automate patching.</p>
-        <p><strong>Value Created:</strong> Streamlined patching, reduced errors, and improved system uptime and security across the infrastructure.</p>
-
-        <h4>Automating the Provisioning of Red Hat VM</h4>
-        <p><strong>Description:</strong> The manual provisioning of large-scale Red Hat VMs was becoming impossible due to the scale.</p>
-        <p><strong>Contribution:</strong> Designed and implemented an Ansible-based workflow to automate the provisioning of VMs into the production environment.</p>
-        <p><strong>Value Created:</strong> Streamlined the installation, configuration, and management of VMs.</p>
-
-        <h4>Deploying Critical Applications to Infrastructure</h4>
-        <p><strong>Description:</strong> A critical cloud-based application needed to be deployed, configured, and tested across the entire platform.</p>
-        <p><strong>Contribution:</strong> Took solo responsibility for installing, configuring, and troubleshooting the application.</p>
-        <p><strong>Value Created:</strong> Ensured that the system was aligned with organizational policies and operational requirements.</p>
-
-        <h3>System Engineer at University of Oslo (2012-2022)</h3>
-        <p>At the University of Oslo, Gang participated in managing a local data center to deliver a reliable scientific computing infrastructure to researchers at the Centre for Molecular Medicine Norway. His main tasks included:</p>
-        <ul>
-            <li>Installing, configuring, and maintaining Dell/HP/Red Hat servers for a variety of services, including computing, virtualization, database, web, Samba, NFS, and inventory.</li>
-            <li>Deploying and managing Windows machines with SCCM.</li>
-            <li>Installing and maintaining complex scientific applications with increasing and unstable dependencies.</li>
-            <li>Performing daily admin work, including account management, storage management, security, monitoring, and problem troubleshooting.</li>
-            <li>Assisting researchers using the HPC system at the University of Oslo.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li>Master in Network and System Administration, University of Oslo (2010-2012)</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Red Hat Certified Architect</li>
-            <li>Red Hat Certified Specialist in Containers</li>
-            <li>Red Hat Certified OpenShift Administrator</li>
-            <li>Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform</li>
-            <li>Red Hat Certified Specialist in Deployment and Systems Management</li>
-            <li>Red Hat Certified Engineer</li>
-            <li>Red Hat 8 Certified System Administrator</li>
-            <li>Microsoft Certified: Azure Fundamentals</li>
-            <li>Red Hat Certified Specialist in Containers and Kubernetes</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Hobbies</h2>
-        <p>Blog writing, Skiing, and hiking</
+    <footer>
+        <p>Links: <a href="[Red Hat Bio URL]">Red Hat Bio</a> | <a href="[LinkedIn URL]">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
